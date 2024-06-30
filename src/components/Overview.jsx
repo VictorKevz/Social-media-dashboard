@@ -30,7 +30,7 @@ return(
         <div className="overview-stats-container">
             <h4 className={`metric-number ${isDarkMode ? 'headings-dark-mode':''}`}>{obj.id != 4 ? obj.stats.count : `${obj.stats.count}k`}</h4>
             <div className="percentage-icon-container">
-            <img src={obj.stats.icon} alt={iconaAltText} className="percentage-icon"/>
+            <img src={obj.stats.icon} alt={`${iconaAltText}`} className="percentage-icon"/>
             <p className={`percentage ${percentageClass}`}>{`${obj.stats.percentage}%`}</p>
             </div>
         </div>

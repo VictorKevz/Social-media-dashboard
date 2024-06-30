@@ -38,7 +38,7 @@ function Header({ onSwitch, isDarkMode }) {
  <h2 className={`followers ${isDarkMode ? 'headings-dark-mode': ''}`}>{obj.id == 3 ? `${obj.numberOfFollowers}k`: obj.numberOfFollowers}</h2>
  <p className="caption">{obj.caption}</p>
  <div className="stats-container">
- <img src={obj.status.icon} className="arrow-icon"/>
+ <img src={obj.status.icon} alt={`${obj.id !=4? 'up arrow-icon':'down arrow-icon'}`} className="arrow-icon"/>
  <p className={`rate ${obj.id === 4 ? 'youtube': ''}`}>{`${obj.status.rate} Today`}</p>
  </div>
  </div>

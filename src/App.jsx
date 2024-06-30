@@ -5,7 +5,7 @@ import Overview from "./components/Overview";
 import "./App.css";
 
 function App() {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
 
   function switchTheme() {
     setDarkMode(!isDarkMode);
